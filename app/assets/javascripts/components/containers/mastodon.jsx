@@ -8,6 +8,7 @@ import {
   connectTimeline,
   disconnectTimeline
 } from '../actions/timelines';
+import { showOnboardingOnce } from '../actions/onboarding';
 import { updateNotifications, refreshNotifications } from '../actions/notifications';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 import {
@@ -37,6 +38,7 @@ import FollowRequests from '../features/follow_requests';
 import GenericNotFound from '../features/generic_not_found';
 import FavouritedStatuses from '../features/favourited_statuses';
 import Blocks from '../features/blocks';
+import Mutes from '../features/mutes';
 import Report from '../features/report';
 import { IntlProvider, addLocaleData } from 'react-intl';
 import en from 'react-intl/locale-data/en';
@@ -133,6 +135,8 @@ const Mastodon = React.createClass({
     if (typeof window.Notification !== 'undefined' && Notification.permission === 'default') {
       Notification.requestPermission();
     }
+
+    store.dispatch(showOnboardingOnce());
   },
 
   componentWillUnmount () {
@@ -172,6 +176,7 @@ const Mastodon = React.createClass({
 
               <Route path='follow_requests' component={FollowRequests} />
               <Route path='blocks' component={Blocks} />
+              <Route path='mutes' component={Mutes} />
               <Route path='report' component={Report} />
 
               <Route path='*' component={GenericNotFound} />
