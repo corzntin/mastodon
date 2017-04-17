@@ -7,10 +7,7 @@ class HomeController < ApplicationController
     @body_classes           = 'app-body'
     @token                  = find_or_create_access_token.token
     @web_settings           = Web::Setting.find_by(user: current_user)&.data || {}
-<<<<<<< HEAD
-=======
     @admin                  = Account.find_local(Setting.site_contact_username)
->>>>>>> 1955a3f4448e1a13898c10a89e681395d6748ec3
     @streaming_api_base_url = Rails.configuration.x.streaming_api_base_url
   end
 
