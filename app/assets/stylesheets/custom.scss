@@ -1,12 +1,12 @@
-$color1: #1c1e26; // darkest
-$color4: #b94d4d; // vibrant
+@import 'application';
+
+$color1: #1c1e26 !important; // darkest
+$color4: #b94d4d !important; // vibrant
 
 .column {
   flex-grow: 1 !important;
 }
 
 .getting-started {
-  background: image-url('ancom-elefriend.png') no-repeat 0 100% local;
+  background: image-url('ancom-elefriend.png') no-repeat 0 100% local !important;
 }
-
-@import 'application';
