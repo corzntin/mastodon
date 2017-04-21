@@ -37,7 +37,7 @@ const fr = {
   "getting_started.about_addressing": "Vous pouvez suivre les statuts de quelqu’un en entrant dans le champ de recherche leur identifiant et le domaine de leur instance, séparés par un @ à la manière d’une adresse courriel.",
   "getting_started.about_shortcuts": "Si cette personne utilise la même instance que vous, l’identifiant suffit. C’est le même principe pour mentionner quelqu’un dans vos statuts.",
   "getting_started.about_developer": "Pour suivre le développeur de ce projet, c’est Gargron@mastodon.social",
-  "getting_started.open_source_notice": "Mastodon est un logiciel libre. Vous pouvez contribuer et envoyer vos commentaires et rapports de bogues via {github} sur GitHub.",
+  "getting_started.open_source_notice": "Mastodon est un logiciel libre. Vous pouvez contribuer et envoyer vos commentaires et rapports de bogues via {github} sur GitHub. L'éléphant anarcho-communiste ci-dessous a été fait par @cigazze, et est publié sous licence CC-BY 3.0. Merci à elle pour son travail !",
   "column.home": "Accueil",
   "column.community": "Fil public local",
   "column.public": "Fil public global",
