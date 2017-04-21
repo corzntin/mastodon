@@ -1,4 +1,8 @@
 $color1: #1c1e26; // darkest
 $color4: #b94d4d; // vibrant
 
+.column {
+  flex-grow: 1 !important;
+}
+
 @import 'application';
