@@ -1,5 +1,3 @@
-@import 'application';
-
 $color1: #1c1e26; // darkest
 $color4: #b94d4d; // vibrant
 
@@ -10,3 +8,5 @@ $color4: #b94d4d; // vibrant
 .getting-started {
   background: image-url('ancom-elefriend.png') no-repeat 0 100% local;
 }
+
+@import 'application';
